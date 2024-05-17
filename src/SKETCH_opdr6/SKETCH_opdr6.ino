@@ -2,20 +2,21 @@
 
 Servo JoyServo;  // Een servo object aanmaken
 
-const int vrxPin = A0; // Pin for the joystick x-axis
-const int buttonPin = 8; // Pin for the button
+const int vrxPin = A0; // VRX koppelen aan analoge pin A0 
+const int buttonPin = 8; // SW voor de knop koppelen aan pin 8
 
-int buttonJoyState = HIGH; // Variable for button state
+int buttonJoyState = HIGH; // Variabele waarde HIGH meegeven ivm pullup output
 
 void setup() {
-  JoyServo.attach(9); // Attach the servo to pin 9
-  pinMode(buttonPin, INPUT_PULLUP); // Set the button pin as input with an internal pull-up resistor
+  JoyServo.attach(9); // Servo koppelen aan pin 9
+  pinMode(buttonPin, INPUT_PULLUP); // De Joystick knop input_pullup meegeven
 }
 
 void loop() {
+  // De status van de knop uitlezen
   buttonJoyState = digitalRead(buttonPin);
-  
-  if (buttonJoyState == LOW) {
+  // Indien knop ingedrukt, functie buttonPress aanroepen, anders functie moveJoyHorizontal blijven aanroepen
+  if (buttonJoyState == LOW) { 
     buttonPress();
   } else {
     moveJoyHorizontal();
@@ -23,25 +24,25 @@ void loop() {
 }
   
 void moveJoyHorizontal() {
-  // Read the status of the x-axis pin
+  // Lees de waarde van de pin, horizontale (x-as) beweging
   int pinX = analogRead(vrxPin);
 
-  // Map the joystick value to the servo range (0 to 180 degrees)
+  // Schaal de waarde van de vrxpin met de servo 
   int posX = map(pinX, 0, 1023, 0, 180); 
  
-  // Move the servo to the correct position
+  // Beweeg de servo obv de aangegeven positie
   JoyServo.write(posX);  
 }
 
 void buttonPress() {
-  // Move the servo one step at a time when the button is pressed
+  // Indien knop is ingedrukt, servo steeds 1 stap verplaatsen
   for (int pos = 0; pos <= 120; pos++) {
     JoyServo.write(pos);
-    delay(1000 / 120); // Spread 180 steps over 1 second
+    delay(1000 / 120); // Rekensommetje om 120 stapjes te verdelen over 1 seconde
   }
-  // Move the servo back to the original position
+  // Servo verplaatst terug naar originele positie
   for (int pos = 120; pos >= 0; pos--) {
     JoyServo.write(pos);
-    delay(1000 / 120); // Spread 180 steps over 1 second
+    delay(1000 / 120); // Rekensommetje om 120 stapjes te verdelen over 1 seconde
   }
 }
