@@ -1,4 +1,4 @@
-const int potPin = A5; //Refereert aan input A5 van de ARDUINO 
+const int potPin = A5; // Refereert aan input A5 van de ARDUINO 
 int potMeterValue = 0; 
 
 void setup() {
