@@ -6,8 +6,8 @@ void setup()
 
 void loop()
 {
-  blinkLED(11, 1000);// Roep de functie aan voor pin 11 en wacht 1 seconde
-  blinkLED(12, 1000);// Roep de functie aan voor pin 12 en wacht 1 seconde
+  blinkLED(11, 1000); // Roep de functie aan voor pin 11 en wacht 1 seconde
+  blinkLED(12, 1000); // Roep de functie aan voor pin 12 en wacht 1 seconde
 }
 
 // Functie om een LED te laten knipperen met opgegeven tijd
