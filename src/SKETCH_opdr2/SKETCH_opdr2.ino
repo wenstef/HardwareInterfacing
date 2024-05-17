@@ -1,31 +1,30 @@
-// Using a loop to initialize pins 6 - 13 as outputs
 void setup() {
-  // Set all LED pins (6 to 13) as outputs
+  // Gebruik een for loop om elke pin vanaf 6 - 13 OUTPUT waarde mee te geven
   for (int pin = 6; pin <= 13; pin++) {
-    pinMode(pin, OUTPUT); // Set the pin mode to OUTPUT
+    pinMode(pin, OUTPUT); 
   }
 }
 
 void loop() {
-  left(75);  // Call the left function with a delay of 75 milliseconds
-  right(75); // Call the right function with a delay of 75 milliseconds
+  left(75);  // Aanroepen van functie left() met een wachttijd van 75ms
+  right(75); // Aanroepen van functie right() met een wachttijd van 75ms
 }
 
-// The left function iterates through the specified pins, calling blinkLED function
-void left(int tijd) {
-  for (int pin = 6; pin <= 13; pin++) {
-    blinkLED(pin, tijd); // Call blinkLED function for each pin with delay
-  }
+// De functie gaat door de rij van links naar rechts 
+void left(int time) {
+	for(int pin = 13; pin >= 6; pin--) {
+		blinkLED(pin, time); // Roept de functie blinkLED aan
+	}
 }
 
-// The right function also iterates through the pins, calling blinkLED function
+// De functie gaat door de rij van rechts naar links
 void right(int tijd) {
   for (int pin = 6; pin <= 13; pin++) {
-    blinkLED(pin, tijd); // Call blinkLED function for each pin with delay
+    blinkLED(pin, tijd); // Roept de functie blinkLED aan
   }
 }
 
-// Turning LED on and off by toggling the state of a LED
+// Laat de LEDjes steeds aan en uit gaan
 void blinkLED(int pin, int tijd) {
   digitalWrite(pin, HIGH);
   delay(tijd);              
