@@ -17,11 +17,6 @@ ___
 ### Image TinkerCad I  
 ![Opdracht1](https://github.com/wenstef/HardwareInterfacing/assets/151529181/92e42aaf-0ba2-4f1f-b346-9319bbb651ec)
 
-
-### Video I  
-[!Video1](https://github.com/wenstef/HardwareInterfacing/assets/151529181/46c4a58f-1c53-4a81-8813-8f54960daa89)  
-
-
 ___
 ${{\color{LightGreen}\Huge{\textsf{ARDUINO assignment 2}}}}\$
 ___  
@@ -41,10 +36,6 @@ ___
 
 ### Image TinkerCad II  
 ![Opdracht2](https://github.com/wenstef/HardwareInterfacing/assets/151529181/11132d26-c266-4508-abb6-a543ff7a7214)
-
-### Video II  
-[!Video](https://github.com/wenstef/HardwareInterfacing/assets/151529181/142776c6-cea9-49d6-8957-b8860a28ff4a)  
-
 
 ___
 ${{\color{LightGreen}\Huge{\textsf{ARDUINO assignment 3}}}}\$
@@ -66,11 +57,6 @@ ___
 ### Image TinkerCad III  
 ![Opdracht3](https://github.com/wenstef/HardwareInterfacing/assets/151529181/a3e75c92-d6ca-4dde-b326-3277c1d4c44f)  
 
-
-### Video III  
-[!video](https://github.com/wenstef/HardwareInterfacing/assets/151529181/0b676a81-1d94-4eb8-a367-47c580c9701b)  
-
-
 ___
 ${{\color{LightGreen}\Huge{\textsf{ARDUINO assignment 4}}}}\$
 ___  
@@ -87,10 +73,6 @@ ___
 
 ### Image TinkerCad IV  
 ![Opdracht4](https://github.com/wenstef/HardwareInterfacing/assets/151529181/d54ce6be-2511-4b2d-bbab-474a825e53f7)  
-
-
-### Video IV
-[!Video4](https://github.com/wenstef/HardwareInterfacing/assets/151529181/9ca7eca9-6524-4642-b2f8-9fec72b41886)  
 
 >
 ___
@@ -111,11 +93,6 @@ ___
 ### Image TinkerCad V
 ![Opdracht5](https://github.com/wenstef/HardwareInterfacing/assets/151529181/44104a72-26a1-4371-b77c-0c5c4d356555)
   
-  
-### Video V 
-[!Video](https://github.com/wenstef/HardwareInterfacing/assets/151529181/be032046-eb4c-4537-9c07-4c709951c336)  
-
-
 ___
 ${{\color{LightGreen}\Huge{\textsf{ARDUINO assignment 6}}}}\$
 ___
@@ -133,9 +110,3 @@ ___
 ### Image TinkerCad VI 
 ![Opdracht6](https://github.com/wenstef/HardwareInterfacing/assets/151529181/eeae51db-e061-40fd-9952-cbd8d840f532)  
   
-  
-### Video VI  
-[!Video](https://github.com/wenstef/HardwareInterfacing/assets/151529181/f0111cce-df5c-4c18-86cf-2867d6286c46)  
-
-
-
