@@ -1,5 +1,8 @@
-﻿# HardwareInterfacing
- 
+﻿# Hardware Interfacing
+
+### Schoolassignment - hardware Interfacing 
+*Note: The code comments are written in Dutch to meet the assignment requirements.*
+
 ___
 ${{\color{LightGreen}\Huge{\textsf{ARDUINO assignment 1}}}}\$
 ___
